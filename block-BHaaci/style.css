@@ -47,122 +47,89 @@ table {
 	border-spacing: 0;
 }
 body{
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1.2;
-    background-image: url(../block-BHaaci/assets/bg-intro-desktop.png);
-    background-color: rgb(255,121,120);
 }
 .container{
     max-width: 1300px;
-    padding: 0 32px;
     margin: 0 auto;
+    padding: 0 32px;
 }
 .flex{
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.flex1{
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
+.flex-48{
+    flex: 0 1 48%;
 }
-.Signup-page{
-	margin-top: 50px;
-	text-align: center;
-	height: 650px;
+main{
+    background: url(../block-BHaaci/assets/bg-intro-desktop.png) no-repeat ,linear-gradient(#fd7979,#fd7979);
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
 }
-.side-heading{
-	width: 35%;
+.heading{
+    font-size: 56px;
+    color: white;
+    font-weight: 700;
 }
-
-p{
-	color: rgb(206,188,188);
+.text{
+    color: white;
+    font-size: 18px;
+    margin-top: 24px;
 }
-.side-para{
-	margin-top: 20px;
-	color: rgb(253,229,225)
+.btn{
+    display: inline-block;
+    text-align: center;
+    width: 93%;
+    padding: 16px 24px;
+    color: white;
+    border-radius: 6px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.75);
 }
-h1{
-	font-size: 67px;
-	color: white;
+.btn strong{
+    font-weight: 800;
 }
-.right-side{
-	width: 35%;
+.btn-primary{
+    background-color: #5d54a3;
+    font-weight: 300;
+    margin-bottom: 32px;
 }
-.form-heading{
-	
-	background-color: rgb(93,84,163);
-	color: white;
-	text-align: center;
-	padding: 15px;
-	border-radius: 10px;
-}
-
-span{
-	color: rgb(215,209,238);
-}
-form {
-	max-width: 700px;
-    margin: 0 auto;
-    background-color: rgb(255,255,255);
-    padding: 19px;
-	border-radius: 8px;
-	box-shadow: #F4F7F8;
-	margin-top: 24px;
+form{
+    background-color: white;
+    padding: 32px;
+    border-radius: 8px;
 }
 .form-control{
-    display: block;
-    width: 95%;
-    background-color: #ffffff;
-    padding: 8px;
-    outline: 0;
-    color: #626768;
-    margin-bottom: 24px;
-}
-.form-control1{
-    display: block;
-    width: 95%;
-    background-color: #ffffff;
-    padding: 8px;
-    
-    color: #626768;
-    margin-bottom: 24px;
-}
-input[type="text"] {
-	border-color: rgb(192,187,202)
-}
-input[type="email"] {
-	border-color: rgb(242,242,242);
-}
-input[type="password"] {
-	border-color: rgb(242,242,242);
-}
-.form-contol1 ::placeholder{
-	color: black;
-}
-button{
-    background-color: #5ecf80;
-    width: 100%;
-    padding: 16px;
-    border: 0;
+    display: inline-block;
+    width: 90%;
+    padding: 16px 24px;
+    margin-bottom: 16px;
+    border: 1px solid #cccc;
     border-radius: 6px;
-    color: white;
-	text-transform: uppercase;
-	margin-bottom: 24px;
+    outline: 0;
 }
-.terms{
-	color: rgb(218,216,224);
+.form-control:focus{
+    border-color: #5d54a3;
 }
-.para1{
-	font-size: 15px;
-	text-align: center;
-
+.btn-secondary{
+    border: 0;
+    box-shadow: none;
+    background-color: #37cc8a;
+    font-size: 18px;
+    text-transform: uppercase;
 }
-.para1 p{
-	text-align: center;
+.bottom-para{
+    text-align: center;
+    color: #cccc;
+    font-size: 14px;
+    margin-top: 12px;
 }
-.span1{
-	color: rgb(240,173,169);
+.bottom-para a{
+    color: pink;
+    margin-left: 6px;
+}
+.flex-48 a{
+    text-decoration: none;
 }
