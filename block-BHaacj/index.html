@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-II | Building Forms</title>
+    <!-- Font Style -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/7f5cab6c93.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header flex">
+            <div class="brand">
+                <a href="index.html">
+                    <img class="logo" src="assets/logo.png" alt="logo">
+                    <strong class="brand-name">Journey</strong>
+                </a>
+            </div>
+            <div class="header-navigation">
+                <nav>
+                    <ul class="flex">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Top Destinations</a></li>
+                        <li><a href="#">Recommended Places</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero container">
+            <div class="flex column color-white">
+            <h1 class="heading-main">Let's begin</h1>
+            <img  class="three-dots" src="assets/dots-3.png" alt="Three dots">
+            <p class="hero-para"> We assist you to chose the best.</p>
+            <div class="down-arrow flex justify-center">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+            <!--  Form in the Hero Section -->
+            <div class="booking">
+                <form class="form-booking flex wrap" action="/index.html" action="post">
+                    <fieldset class="group-destination flex column align-start">
+                        <label for="destination">Choose your destination</label>
+                        <input type="text" class="form-control" id="destination" name="destination" placeholder="Type your destination...">
+                    </fieldset>
+                    <fieldset class="group-drop-down flex">
+                        <div class="subgroup-rooms col-1-3 flex column align-start">
+                            <label for="rooms">How many rooms?</label>
+                            <input type="number" class="drop-down" id="rooms" name="rooms" placeholder="1 Room" min="1" max="10"> 
+                        </div>
+                        <div class="subgroup-adult col-1-3 flex column align-start">
+                            <label for="adult">Adult</label>
+                            <input type="number" class="drop-down" id="adult" name="adult" placeholder="1" min="1" max="40"> 
+                        </div>
+                        <div class="subgroup-children col-1-3 flex column align-start">
+                            <label for="children">Children</label>
+                            <input type="number" class="drop-down" id="children" name="children" placeholder="0" min=0 max="20"> 
+                        </div>
+                    </fieldset>
+                    <fieldset class="group-date flex">
+                        <div class="subgroup-check-in col-1-2 flex column align-start">
+                            <label for="check-in">Check in date</label>
+                            <input type="date" class="stay-date" id="check-in" name="check-in" value="Check In">
+                        </div>                                        
+                            <div class="subgroup-check-out col-1-2 flex column align-start">
+                                <label for="check-out">Check out date</label>
+                                <input type="date" class="stay-date" id="check-out" name="check-out" value="Check Out">
+                            </div>                        
+                    </fieldset>
+                    <button class="btn btn-primary form-btn">Check Availability</button>
+                </form>              
+            </div>
+        </section>
+        <section class="introduction">
+            <div class="container padding flex column intro">
+                <h2 class="heading-intro">Your <strong class="title">Journey</strong> is our priority</h2>
+            <p class="intro-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum corrupti cum optio adipisci. Voluptates, at adipisci quod alias 
+                dignissimos molestias dolores, accusamus.
+            </p>
+            <div class="btn btn-primary ">Continue Explore</div>
+            </div>            
+        </section>
+        <section class="gallery">
+            <div class="container gallery-background">
+                <article class="blog-europe position-relative flex">
+                    <img class="blog-img" src="assets/tm-img-01.jpg" alt="mountain, water and buildings">
+                    <div class="blog blog-1">
+                        <header>
+                            <h3 class="heading-blog">
+                                Europe's most visited places
+                            </h3>
+                        </header>
+                            <p class=blog-text>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est repudiandae ipsa eos,
+                                 doloribus facere error unde et doloremque maxime ab odio corrupti vitae dolorum modi quos, aliquid quo eius neque.
+                            </p>
+                            <div class="btn btn-secondary btn-blog">Continue reading</div>                        
+                    </div>
+                    <div class="arrows flex">
+                        <div class="left-arrow flex">
+                            <i class="fas fa-chevron-circle-left"></i>
+                        </div>
+                        <div class="right-arrow flex">
+                            <i class="fas fa-chevron-circle-right"></i>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog-asia position-relative flex">
+                    <div class="blog blog-2">
+                        <header>
+                            <h3 class="heading-blog">
+                                America's most famous places
+                            </h3>
+                        </header>
+                            <p class=blog-text>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est repudiandae ipsa eos,
+                                 doloribus facere error unde et doloremque maxime ab odio corrupti vitae dolorum modi quos, aliquid quo eius neque.
+                            </p>
+                            <div class="btn btn-secondary btn-blog">Continue reading</div>                        
+                    </div>
+                    <img class="blog-img" src="assets/tm-img-02.jpg" alt="mountain, water and buildings">
+                    <div class="blog-2-arrows flex">
+                        <div class="left-arrow flex">
+                            <i class="fas fa-chevron-circle-left"></i>
+                        </div>
+                        <div class="right-arrow flex">
+                            <i class="fas fa-chevron-circle-right"></i>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog-america position-relative flex">
+                    <img class="blog-img" src="assets/tm-img-03.jpg" alt="mountain, water and buildings">
+                    <div class="blog blog-3">
+                        <header>
+                            <h3 class="heading-blog">
+                                America's most famous places
+                            </h3>
+                        </header>
+                            <p class=blog-text>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est repudiandae ipsa eos,
+                                 doloribus facere error unde et doloremque maxime ab odio corrupti vitae dolorum modi quos, aliquid quo eius neque.
+                            </p>
+                            <div class="btn btn-secondary btn-blog">Continue reading</div>                        
+                    </div>
+                    <div class="arrows flex">
+                        <div class="left-arrow flex">
+                            <i class="fas fa-chevron-circle-left"></i>
+                        </div>
+                        <div class="right-arrow flex">
+                            <i class="fas fa-chevron-circle-right"></i>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="map">
+            <div class="container flex  map-background">
+                <div class="map-group">
+                    <img src="assets/north-america.png" alt="North America">   
+                    <div class="caption">North America</div> 
+                </div>
+                <div class="map-group">
+                    <img src="assets/south-america.png" alt="South America">   
+                    <div class="caption">South America</div> 
+                </div>
+                <div class="map-group">
+                    <img src="assets/europe.png" alt="Europe">
+                    <div class="caption">Europe</div>
+                </div>
+                <div class="map-group asia-background">
+                    <img src="assets/asia.png" alt="Asia">
+                    <div class="caption">Asia</div>
+                </div>
+                <div class="map-group">
+                    <img src="assets/africa.png" alt="Africa">
+                    <div class="caption">Africa</div>
+                </div>
+                <div class="map-group">
+                    <img src="assets/australia.png" alt="Australia">
+                    <div class="caption">Australia</div>
+                </div>
+                <div class="map-group">
+                    <img src="assets/antartica.png" alt="Antartica">
+                    <div class="caption">Antartica</div>
+                </div>                              
+            </div>
+        </section>
+        <section class="destination">
+            <div class="container padding destination-background">
+                <article class="card card-1 flex">
+                    <img src="assets/tm-img-06.jpg" alt="Beach">
+                    <div class="card-body flex column align-start">
+                        <h4 class="heading-card">Asia resort hotel</h4>
+                        <h5 class="heading-location">Singapore</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui nisi, voluptate repudiandae quos explicabo ex cum fugiat...
+                        </p>                        
+                    </div>
+                    <img class="btn-curve" src="assets/button-curve.png" alt="Buttton-edge">
+                    <a class="card-button flex column" href="#">
+                        <span class="rate">$440</span><br>
+                        <span class="continue-reading">Continue reading</span>
+                    </a>
+                </article>
+                <article class="card card-2 flex">
+                    <img src="assets/tm-img-07.jpg" alt="Beach">
+                    <div class="card-body flex column align-start">
+                        <h4 class="heading-card">Myanmar hotel resort</h4>
+                        <h5 class="heading-location">Yangon, Myanmar</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui nisi, voluptate repudiandae quos explicabo ex cum fugiat...
+                        </p>                        
+                    </div>
+                    <img class="btn-curve" src="assets/button-curve.png" alt="Buttton-edge">
+                    <a class="card-button flex column" href="#">
+                        <span class="rate">$450</span><br>
+                        <span class="continue-reading">Continue reading</span>
+                    </a>
+                </article>
+                <article class="card card-3 flex">
+                    <img src="assets/tm-img-05.jpg" alt="Beach">
+                    <div class="card-body flex column align-start">
+                        <h4 class="heading-card">Thailand resort hotel</h4>
+                        <h5 class="heading-location">Bangkok, Thailand</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui nisi, voluptate repudiandae quos explicabo ex cum fugiat...
+                        </p>                        
+                    </div>
+                    <img class="btn-curve" src="assets/button-curve.png" alt="Buttton-edge">
+                    <a class="card-button flex column" href="#">
+                        <span class="rate">$460</span><br>
+                        <span class="continue-reading">Continue reading</span>
+                    </a>
+                </article>
+                <article class="card card-4 flex">
+                    <img src="assets/tm-img-04.jpg" alt="Beach">
+                    <div class="card-body flex column align-start">
+                        <h4 class="heading-card">Laos hotel resort</h4>
+                        <h5 class="heading-location">Vientiane, Laoss</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui nisi, voluptate repudiandae quos explicabo ex cum fugiat...
+                        </p>                        
+                    </div>
+                    <img class="btn-curve" src="assets/button-curve.png" alt="Buttton-edge">
+                    <a class="card-button flex column" href="#">
+                        <span class="rate">$470</span><br>
+                        <span class="continue-reading">Continue reading</span>
+                    </a>
+                </article>
+                <div class="btn btn-primary btn-destination">Show more places</div>
+            </div>
+        </section>
+        <section class="google-map">           
+            <div class="container google-map-map">
+                <div class="expand"><i class="fas fa-expand"></i></div>
+                <form class="contact" action="index.html" method="POST">
+                    <fieldset class="contact-form">
+                        <input type="text" class="form-name" placeholder="Name">
+                        <input type="text" class="form-email" placeholder="Email">
+                        <input type="text" class="form-subject" placeholder="Subject">
+                        <textarea value="Message" class="form-message" rows="8"></textarea>
+                        <button class="btn btn-primary send-message">Send messsage now</button>
+                    </fieldset>
+                </form>
+                <div class="magnify">
+                    <div class="plus">+</div>
+                    <div class="minus">-</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="padding container">
+        <span class="copyright">Copyright &copy; 2020 Your Company. Designed by Template Mo</span>
+    </footer>
+</body>
+
+</html>
